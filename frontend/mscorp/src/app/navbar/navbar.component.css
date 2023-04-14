@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: monospace;
 }
 
 img {
@@ -15,22 +16,36 @@ img {
 }
 
 .center span {
-  margin-left: 20px;
-
+  margin-left: 40px;
+  font-size: larger;
+  cursor: pointer;
 }
 
 .center span:hover{
-  margin-left: 20px;
+  margin-left: 40px;
   text-decoration: underline;
 }
 
 .login {
   background-color: transparent;
   border-color: transparent;
-
+  padding: 10px;
+  font-size: larger;
+  cursor: pointer;
 }
 
 .signup {
   background-color: #3cee3e;
   border-color: transparent;
+  padding: 10px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.signup:hover {
+  background-color: rgb(97, 225, 69);
+  border-color: transparent;
+  padding: 10px;
+  font-size: larger;
+  cursor: pointer;
 }
