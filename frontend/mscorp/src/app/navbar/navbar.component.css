@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 150px;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+}
+
+.center span {
+  margin-left: 20px;
+
+}
+
+.center span:hover{
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+.login {
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
+.signup {
+  background-color: #3cee3e;
+  border-color: transparent;
+}
