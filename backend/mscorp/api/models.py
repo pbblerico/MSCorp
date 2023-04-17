@@ -1,3 +1,30 @@
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
+from django.utils.translation import gettext_lazy as _
 # Create your models here.
+
+
+class User(AbstractUser):
+    class UserRole(models.TextChoices):
+        CLIENT = "CL", _("Client")
+        ADMIN = "AD", _("Admin")
+        DOCTOR = "DC", _("Doctor")
+        MANAGER = "MN", _("Manager")
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=50)
+    email = models.CharField(max_length=255, unique=True)
+    password = models.CharField(max_length=255)
+    birthDate = models.DateField()
+    phoneNumber = models.CharField(max_length=15)
+    address = models.CharField(max_length=255)
+    username = None
+
+    role = models.CharField(
+        max_length=2,
+        choices = UserRole.choices,
+        default = UserRole.CLIENT,
+    )
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
+
