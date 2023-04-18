@@ -7,6 +7,7 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny
 import datetime, jwt
 
+
 # Create your views here.
 class Register(APIView):
     def post(self, request):

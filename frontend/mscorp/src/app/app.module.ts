@@ -7,8 +7,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {WelcomePageComponent} from "./welcome-page/welcome-page.component";
 import {LoginComponent} from "./login/login.component";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NotFoundComponent } from './not-found/not-found.component';
 import {SignUpComponent} from "./sign-up/sign-up.component";
+// import {TestComponent} from "./test/test.component";
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import {SignUpComponent} from "./sign-up/sign-up.component";
     WelcomePageComponent,
     LoginComponent,
     SignUpComponent,
-    NotFoundComponent
+    // TestComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
