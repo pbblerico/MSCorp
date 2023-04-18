@@ -41,7 +41,7 @@ export class SignUpComponent {
     // }
     // alert(gender);
     if(pass1 === pass2) {
-      this.service.createUser(firstName, lastName, dateOfBirth, phoneNumber, email, address, pass1).subscribe((user) => {
+      this.service.createUser(firstName, lastName, email, pass1, dateOfBirth, phoneNumber, address).subscribe((user) => {
         alert("user created");
       });
     }
