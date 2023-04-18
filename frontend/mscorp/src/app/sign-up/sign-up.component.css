@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 100vh;
+  height: 100%  ;
   flex-direction: column;
   text-align: center;
   border-radius: 5px;
@@ -60,6 +60,17 @@
   outline: none;
 }
 
+.BirthDate{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.BirthDate a{
+  width: 50%;
+  margin-top: 12px;
+}
+
 .form-box input:focus {
   box-shadow: 0px 0px 1px 1px rgb(21, 213, 52);
 }
@@ -74,6 +85,12 @@
 .form-box form .gender input{
   display: flex;
   flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.gender a{
+  margin-bottom: 7px;
+  padding: 10px;
 }
 
 .form-box button {
