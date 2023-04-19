@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {ApiService} from "../api.service";
 import {FormControl, FormGroup} from "@angular/forms";
+import {User} from "../models/User";
 
 @Component({
   selector: 'app-sign-up',
@@ -35,15 +36,15 @@ export class SignUpComponent {
     let address =this.regForm.value.address;
     let pass1 = this.regForm.value.password1;
     let pass2 = this.regForm.value.password2;
-    // alert(pass1);
-    // if(pass1 === null || pass2 === null) {
-    //   alert("confirm the password");
-    // }
-    // alert(gender);
+
+
     if(pass1 === pass2) {
-      this.service.createUser(firstName, lastName, email, pass1, dateOfBirth, phoneNumber, address).subscribe((user) => {
-        alert("user created");
+      this.service.createUser(firstName, lastName, email, pass1, dateOfBirth, phoneNumber, address, gender).subscribe((user) => {
+        alert(user.email);
       });
+    }
+    else {
+      alert("wrong password");
     }
     // else {
     //   alert("wrong password");
