@@ -14,9 +14,7 @@ import {FormsModule} from "@angular/forms";
 import {ReactiveFormsModule} from "@angular/forms";
 import { PersonalAccountComponent } from './personal-account/personal-account.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
-import { AccountsComponent } from './accounts/accounts.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SecurityComponent } from './security/security.component';
+import {MainPageComponent} from "./main-page/main-page.component";
 
 @NgModule({
   declarations: [
@@ -27,9 +25,7 @@ import { SecurityComponent } from './security/security.component';
     SignUpComponent,
     PersonalAccountComponent,
     UserNavbarComponent,
-    AccountsComponent,
-    ProfileComponent,
-    SecurityComponent,
+    MainPageComponent,
     // TestComponent,
   ],
   imports: [
