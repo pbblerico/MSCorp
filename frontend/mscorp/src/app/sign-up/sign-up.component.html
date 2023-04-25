@@ -1,10 +1,11 @@
 <div class="page">
   <div class="box">
     <div class="title-box">
-      <img src="assets/green.jpeg" alt="Logo">
+      <img src="assets/green.png" alt="Logo">
     </div>
     <div class="form-box">
-      <form [formGroup]="regForm" (ngSubmit)="createAccount()">
+<!--      <form [formGroup]="regForm" (ngSubmit)="createAccount()">-->
+      <form>
         <input type="text" placeholder="*First name" formControlName="firstName" name="name" required>
         <input type="text" placeholder="*Last name" formControlName="lastName" id="surname" required>
         <div class="BirthDate">

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFaviconService } from 'angular-favicon';
 
 
 @Component({
@@ -8,7 +7,7 @@ import { AngularFaviconService } from 'angular-favicon';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  constructor(private ngxFavicon: AngularFaviconService) {}
+
 
   ngOnInit() {
     // this.ngxFavicon.setFavicon(favicon_url);
