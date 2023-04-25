@@ -35,3 +35,7 @@ img {
   font-size: larger;
   cursor: pointer;
 }
+
+.main img{
+  width: 50px;
+}

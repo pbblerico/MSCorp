@@ -1,20 +1,21 @@
+<app-user-navbar></app-user-navbar>
 <div class="page">
-  <div class="left">
-    <h3>General Information</h3>
-    <p>Your personal data</p>
-    <div class="box">
-      <ul>
-        <li>Full name</li>
-        <li>Email</li>
-        <li>Gender</li>
-        <li>Phone number</li>
-        <li>Address</li>
-      </ul>
-      <img src="">
-    </div>
+<!--  <div class="left">-->
+<!--    <button routerLink="/personal/profile">Profile</button>-->
+<!--    <button routerLink="/personal/security">Security</button>-->
+<!--  </div>-->
+  <div class = "side">
+    <a routerLink="/personal/profile">
+      <svg></svg>
+      <span>Profile</span>
+    </a>
+    <a routerLink="/personal/security">
+      <svg></svg>
+      <span>Security</span>
+    </a>
   </div>
   <div class="right">
-
+    <router-outlet></router-outlet>
   </div>
 
 </div>
