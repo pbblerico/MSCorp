@@ -1,0 +1,36 @@
+.page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.box{*/
+/*  display: flex;*/
+/*  !*flex-direction: row;*!*/
+/*  !*align-items: center;*!*/
+/*  !*justify-content: center;*!*/
+/*  !*width: 100%;*!*/
+/*}*/
+
+
+.left{
+  width: 500px;
+}
+
+.left .box img{
+  background-color: white;
+}
+
+.left .box ul{
+  list-style: none;
+}
+
+.left .box li:nth-child(odd) {
+  background-color: #c4bebe;
+}
+
+.left .box li:nth-child(even) {
+  background-color: white;
+}
+
