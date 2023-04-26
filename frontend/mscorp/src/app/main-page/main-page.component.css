@@ -20,8 +20,12 @@
   align-items: center;
 }
 
-.side svg {
-  width: 30px;
+.side a span {
+  margin-left: 15px;
+}
+
+.side a fa-icon {
+  width: 20px;
 }
 
 

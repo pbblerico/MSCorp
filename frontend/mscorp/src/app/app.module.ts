@@ -15,6 +15,11 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { PersonalAccountComponent } from './personal-account/personal-account.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import {MainPageComponent} from "./main-page/main-page.component";
+import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+
 
 @NgModule({
   declarations: [
@@ -35,8 +40,14 @@ import {MainPageComponent} from "./main-page/main-page.component";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    // Add multiple icons to the library
+    library.addIconPacks(fas, far);
+  }
+}

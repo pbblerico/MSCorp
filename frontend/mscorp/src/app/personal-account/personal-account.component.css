@@ -39,6 +39,14 @@
   width: 30px;
 }
 
+.side a span {
+  margin-left: 15px;
+}
+
+.side a fa-icon {
+  width: 20px;
+}
+
 
 .side a:hover {
   background-color: #eeebeb;
