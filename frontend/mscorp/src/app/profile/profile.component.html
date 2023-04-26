@@ -1,9 +1,9 @@
 <div class="page">
-  <div class="left">
-    <div class="Edit">
-      <h1>Editing a profile</h1>
-    </div>
-    <div class="Personal Info">
+  <div class="Edit">
+    <h1>Editing a profile</h1>
+  </div>
+  <div class="all">
+    <div class="left">
       <h2>Personal Information</h2>
       <div class="Raw">
         <div class="gender"></div>
@@ -13,29 +13,42 @@
       </div>
       <div class="box">
         <div class="LastName">
-          <input placeholder="Фамилия" autocomplete="" class="sc-fznMAR bUtWaw" value="Кайсагалиев">
-          <div class="sc-fzoKki ZLOZM">Фамилия</div>
+          <input placeholder="Last Name" autocomplete="" class="sc-fznMAR bUtWaw" value="Кайсагалиев">
+<!--          <div class="sc-fzoKki ZLOZM">Фамилия</div>-->
         </div>
         <div class="FirstName">
-          <input placeholder="Имя" autocomplete="" class="sc-fznMAR bUtWaw" value="Мирас">
+          <input placeholder="First Name" autocomplete="" class="sc-fznMAR bUtWaw" value="Мирас">
         </div>
         <div class="MiddleName">
-          <input placeholder="Отчество" autocomplete="" class="sc-fznMAR bUtWaw" value="Сайфуллаевич">
+          <input placeholder="Middle Name" autocomplete="" class="sc-fznMAR bUtWaw" value="Сайфуллаевич">
         </div>
         <div class="Address">
-          <input placeholder="Город" autocomplete="" maxlength="255" class="sc-fznMAR bUtWaw" value="">
+          <input placeholder="Address" autocomplete="" maxlength="255" class="sc-fznMAR bUtWaw" value="">
         </div>
         <div class="BirthDate">
-          <input placeholder="Дата рождения" class="sc-fznMAR bUtWaw sc-pZMVu WTXGj" width="150" value="05.05.2004">
+          <input placeholder="Birth Date" class="sc-fznMAR bUtWaw sc-pZMVu WTXGj" width="150" value="05.05.2004">
         </div>
         <div class="Blood">
-          <p>Blood type</p>
+          <label for="bloodgroup">Blood Type:</label>
+          <select id="bloodgroup" name="bloodgroup">
+            <option>O(1) Rh-</option>
+            <option>O(1) Rh+</option>
+            <option>A(2) Rh-</option>
+            <option>A(2) Rh+</option>
+            <option>B(3) Rh-</option>
+            <option>B(3) Rh+</option>
+            <option>AB(4) Rh-</option>
+            <option>AB(4) Rh+</option>
+          </select>
         </div>
       </div>
     </div>
+    <div class="right">
+      <h2>Photo</h2>
+      <div class="photo"><img src="https://lk.ondoc.me/assets/user-no-gender-fff96e4f.svg"></div>
+    </div>
   </div>
-  <div class="right">
-    <h2>Photo</h2>
-    <div class="photo"><img src="https://lk.ondoc.me/assets/user-no-gender-fff96e4f.svg"></div>
+  <div class="Save">
+    <button type="submit">Save</button>
   </div>
 </div>

@@ -1,1 +1,77 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*justify-content: space-between;*/
+  padding: 20px;
+}
 
+.Edit{
+  margin-bottom: 30px;
+}
+
+.all{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /*justify-content: space-between;*/
+  width: 100%;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.box input{
+  width: 320px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #cbcaca;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+}
+
+.right .photo img{
+  background-color: #eeebeb;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #d7d5d5;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.Save{
+  width: 100%;
+}
+
+.Save button{
+  width: 55%;
+  padding: 6px;
+  font-weight: bold;
+  color: white;
+  background-color: #15d534;
+  border: none;
+  border-radius: 8px;
+}
+
+.Save button:hover{
+  background-color: #0cb22a;
+}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
-// import {WelcomePageComponent} from "../welcome-page/welcome-page.component";
-// import {NavbarComponent} from "../navbar/navbar.component";
+import {WelcomePageComponent} from "../welcome-page/welcome-page.component";
+import {NavbarComponent} from "../navbar/navbar.component";
 // import {ApiService} from "../api.service";
 
 @Component({
@@ -11,7 +11,7 @@ import { NgModule } from '@angular/core';
 })
 
 export class LoginComponent {
-
+  //
   // constructor(private service: ApiService) {
   // }
   // login() {
