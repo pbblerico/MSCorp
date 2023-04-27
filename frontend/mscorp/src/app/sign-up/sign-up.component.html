@@ -5,7 +5,7 @@
     </div>
     <div class="form-box">
 <!--      <form [formGroup]="regForm" (ngSubmit)="createAccount()">-->
-      <form>
+      <form [formGroup]="regForm" (ngSubmit)="createAccount()">
         <input type="text" placeholder="*First name" formControlName="firstName" name="name" required>
         <input type="text" placeholder="*Last name" formControlName="lastName" id="surname" required>
         <div class="BirthDate">
@@ -18,8 +18,8 @@
         <input type="text" placeholder="Phone number" formControlName="phoneNumber">
         <input type="text" placeholder="*Email" formControlName="email" required>
         <input type="text" placeholder="Address" formControlName="address">
-        <input type="text" placeholder="*Password" formControlName="password1" required>
-        <input type="text" placeholder="*Confirm the password" formControlName="password2" required>
+        <input type="password" placeholder="*Password" formControlName="password1" required>
+        <input type="password" placeholder="*Confirm the password" formControlName="password2" required>
         <button type="submit" >Create Account</button>
       </form>
     </div>
