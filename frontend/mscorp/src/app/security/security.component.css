@@ -1,0 +1,101 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.Security{
+  margin-bottom: 30px;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /*justify-content: ;*/
+  /*width: 100%;*/
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Email{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Email .Raw{
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+.Email .Raw input{
+  width: 48%;
+  border-radius: 8px;
+  padding: 6px 8px;
+  border: 1px solid rgb(210, 209, 209);
+}
+
+
+.Email button{
+  width: 48%;
+  border: none;
+  border-radius: 8px;
+}
+
+.Phone{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Phone .Raw{
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Phone .Raw input{
+  width: 48%;
+  border-radius: 8px;
+  padding: 6px 8px;
+  border: 1px solid rgb(210, 209, 209);
+}
+
+.Phone button{
+  width: 48%;
+  border: none;
+  border-radius: 8px;
+}
+
+.Delete{
+  background-color: #eeebeb;
+  width: 400px;
+  padding: 40px;
+  /*border: 1px solid #d7d5d5;*/
+  border-radius: 20px;
+  font-family: Arial, Helvetica, system-ui;
+}
+
+.Delete button{
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #ea4c4c;
+}
