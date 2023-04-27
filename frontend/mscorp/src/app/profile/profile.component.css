@@ -75,3 +75,16 @@
 .Save button:hover{
   background-color: #0cb22a;
 }
+
+.Blood{
+  width: 320px;
+  margin-top: 10px;
+}
+
+.Blood select{
+  width: 227px;
+  margin-left: 10px;
+  border: 1px solid #cbcaca;
+  border-radius: 5px;
+  padding: 5px;
+}
