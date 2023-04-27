@@ -1,19 +1,19 @@
 <app-user-navbar></app-user-navbar>
-<div>
+<div class = "page">
   <div class = "side">
-    <a>
-      <fa-icon [icon]="['fas', 'heart-pulse']"> </fa-icon>
+    <a routerLink="/main/health">
+      <fa-icon [icon]="['fas', 'house']"> </fa-icon>
       <span>Health</span>
     </a>
-    <a href = "">
+    <a href = "/main/actions">
       <fa-icon [icon]="['fas', 'book-medical']"> </fa-icon>
       <span>Actions</span>
     </a>
-    <a href = "/main">
+    <a href = "/main/history">
       <fa-icon [icon]="['fas', 'history']"> </fa-icon>
       <span>History</span>
     </a>
-    <a href = "/main">
+    <a href = "/main/events">
       <fa-icon [icon]="['fas', 'calendar']"> </fa-icon>
       <span>Events</span>
     </a>
@@ -26,9 +26,9 @@
       <span>Clinics</span>
     </a>
   </div>
-  <section>
-
-  </section>
+  <div class="right">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
 
