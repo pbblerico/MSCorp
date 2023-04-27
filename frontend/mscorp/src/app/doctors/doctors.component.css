@@ -1,0 +1,71 @@
+.Page{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+.Text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-left: 150px;
+}
+
+.HowItWorks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 500px;
+}
+
+.HowItWorks h4{
+  padding: 10px;
+}
+
+.AddAClinic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 500px;
+}
+
+.AddAClinic h4{
+  padding: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+.AddAClinic a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.AddAClinic button{
+  width: 50%;
+  padding: 6px;
+  font-weight: bold;
+  color: white;
+  background-color: #15d534;
+  border: none;
+  border-radius: 8px;
+}
+
+.AddAClinic button:hover{
+  background-color: #0cb22a;
+}
+
+
+
