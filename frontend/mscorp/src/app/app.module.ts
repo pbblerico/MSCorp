@@ -26,6 +26,7 @@ import { ActionsComponent } from './actions/actions.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { ClinicsComponent } from './clinics/clinics.component';
 import { DoctorsComponent } from './doctors/doctors.component';
+import { AddClinicComponent } from './add-clinic/add-clinic.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { DoctorsComponent } from './doctors/doctors.component';
     CreateAccountComponent,
     ClinicsComponent,
     DoctorsComponent,
+    AddClinicComponent,
     // TestComponent,
   ],
   imports: [

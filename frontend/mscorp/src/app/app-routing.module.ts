@@ -15,6 +15,7 @@ import {ActionsComponent} from "./actions/actions.component";
 import {CreateAccountComponent} from "./create-account/create-account.component";
 import {ClinicsComponent} from "./clinics/clinics.component";
 import {DoctorsComponent} from "./doctors/doctors.component";
+import {AddClinicComponent} from "./add-clinic/add-clinic.component";
 
 const routes: Routes = [
   {path: 'home', component: WelcomePageComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
       {path: 'add-event', component: CreateAccountComponent},
       {path: 'clinics', component: ClinicsComponent},
       {path: 'doctors', component: DoctorsComponent},
+      {path: 'add-clinic', component: AddClinicComponent},
     ]},
   {path: 'personal', component: PersonalAccountComponent, children: [
       {path: 'profile', component: ProfileComponent},

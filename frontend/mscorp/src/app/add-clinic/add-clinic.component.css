@@ -1,0 +1,50 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+}
+
+.head button {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-color: transparent;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  color: rgb(4, 198, 43);
+}
+
+
+.Raw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.Raw input{
+  width: 48%;
+  border-radius: 8px;
+  padding: 6px 8px;
+  border: 1px solid rgb(210, 209, 209);
+}
+
+.Raw button{
+  width: 48%;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 8px;
+  background-color: #15d534;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.help {
+  width: 506px;
+  height: 295px;
+  margin-right: 10px;
+  padding: 32px;
+  background-color: rgb(230, 245, 231);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.help button {
+  background-color: #15d534;
+  border-color: transparent;
+}
+
+.help p {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
