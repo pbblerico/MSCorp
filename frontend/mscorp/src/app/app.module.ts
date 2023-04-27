@@ -24,6 +24,8 @@ import { EventsComponent } from './events/events.component';
 import { HistoryComponent } from './history/history.component';
 import { ActionsComponent } from './actions/actions.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { ClinicsComponent } from './clinics/clinics.component';
+import { DoctorsComponent } from './doctors/doctors.component';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     HistoryComponent,
     ActionsComponent,
     CreateAccountComponent,
+    ClinicsComponent,
+    DoctorsComponent,
     // TestComponent,
   ],
   imports: [
