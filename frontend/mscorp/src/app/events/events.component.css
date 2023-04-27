@@ -1,0 +1,36 @@
+.page {
+  width: 800px;
+}
+.up-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-side button {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-color: transparent;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  color: rgb(4, 198, 43);
+}
+
+/*ng-container {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+
+
