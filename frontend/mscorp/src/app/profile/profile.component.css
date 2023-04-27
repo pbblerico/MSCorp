@@ -40,6 +40,9 @@
   padding: 5px;
 }
 
+.LastName input:after{
+  border-color: #0cb22a;
+}
 
 .right{
   display: flex;
