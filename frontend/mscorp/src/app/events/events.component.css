@@ -26,6 +26,16 @@
   color: rgb(4, 198, 43);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #cbcaca;
+  background-color: #cbcaca;
+  margin: 10px;
+  border-radius: 16px;
+}
+
 /*ng-container {*/
 /*  display: flex;*/
 /*  flex-direction: row;*/

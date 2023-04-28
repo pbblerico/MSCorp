@@ -8,12 +8,15 @@
   </div>
 
   <div>
-<!--    <ng-container *ngIf="user.events !== null; else templateA">-->
-
-<!--    </ng-container>-->
-<!--    <ng-template #templateA>-->
-<!--      <h1>No events</h1>-->
-<!--    </ng-template>-->
+    <ng-container *ngIf="events !== null; else templateA">
+      <div *ngFor = "let event of events" class = "container">
+        <h2>{{event.message}}</h2>
+        <p> Doctor: {{event.doctor}}</p>
+      </div>
+    </ng-container>
+    <ng-template #templateA>
+      <h1>No events</h1>
+    </ng-template>
 
     <ng-container>
       <h3>No events</h3>
