@@ -1,0 +1,41 @@
+.page{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.side {
+  width: 20%;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side a {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  color: #15d534;
+  text-decoration: none;
+  margin: 8px;
+  border-radius: 4px;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.side a span {
+  margin-left: 15px;
+}
+
+.side a fa-icon {
+  width: 20px;
+}
+
+
+.side a:hover {
+  background-color: #eeebeb;
+}
+
