@@ -27,6 +27,9 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { ClinicsComponent } from './clinics/clinics.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { AddClinicComponent } from './add-clinic/add-clinic.component';
+import { DoctorMainPageComponent } from './doctor-main-page/doctor-main-page.component';
+import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.component';
+import { DoctorApplicationComponent } from './doctor-application/doctor-application.component';
 
 
 @NgModule({
@@ -47,6 +50,9 @@ import { AddClinicComponent } from './add-clinic/add-clinic.component';
     ClinicsComponent,
     DoctorsComponent,
     AddClinicComponent,
+    DoctorMainPageComponent,
+    DoctorCalendarComponent,
+    DoctorApplicationComponent,
     // TestComponent,
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {ApplicationModule, NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {WelcomePageComponent} from "./welcome-page/welcome-page.component";
 import {LoginComponent} from "./login/login.component";
@@ -16,6 +16,9 @@ import {CreateAccountComponent} from "./create-account/create-account.component"
 import {ClinicsComponent} from "./clinics/clinics.component";
 import {DoctorsComponent} from "./doctors/doctors.component";
 import {AddClinicComponent} from "./add-clinic/add-clinic.component";
+import {DoctorMainPageComponent} from "./doctor-main-page/doctor-main-page.component";
+import {DoctorApplicationComponent} from "./doctor-application/doctor-application.component";
+import {DoctorCalendarComponent} from "./doctor-calendar/doctor-calendar.component";
 
 const routes: Routes = [
   {path: 'home', component: WelcomePageComponent},
@@ -36,6 +39,10 @@ const routes: Routes = [
   {path: 'personal', component: PersonalAccountComponent, children: [
       {path: 'profile', component: ProfileComponent},
       {path: 'security', component: SecurityComponent}
+    ]},
+  {path: 'doctor-main', component: DoctorMainPageComponent, children: [
+      {path: 'applications', component: DoctorApplicationComponent},
+      {path: 'calendar', component: DoctorCalendarComponent}
     ]},
 
   {path: '**', component: NotFoundComponent},

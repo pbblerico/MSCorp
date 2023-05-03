@@ -31,10 +31,12 @@
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid #cbcaca;
-  background-color: #cbcaca;
+  background-color: #f8f6f6;
   margin: 10px;
   border-radius: 16px;
 }
+
+
 
 /*ng-container {*/
 /*  display: flex;*/
