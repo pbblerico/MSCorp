@@ -14,10 +14,9 @@
 <!--        <p>MSCorp - your health in our hands!</p>-->
       </div>
       <div class="form-box">
-        <form action="">
-          <input type="text" placeholder="Email or phone number">
-          <input type="text" placeholder="Password">
-<!--          <button type="submit" (click)="login()">Login</button>-->
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <input type="text" placeholder="Email" formControlName="email">
+          <input type="password" placeholder="Password" formControlName="password">
             <button type="submit">Login</button>
           <a>Forgot password?</a>
         </form>

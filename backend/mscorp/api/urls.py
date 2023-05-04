@@ -7,5 +7,6 @@ urlpatterns = [
 #     path('login/', obtain_jwt_token),
     path('register/', views.Register.as_view()),
     path('users/', views.getUsers),
+    path('user/', views.UserView.as_view()),
     path('login/', views.Login.as_view()),
 ]

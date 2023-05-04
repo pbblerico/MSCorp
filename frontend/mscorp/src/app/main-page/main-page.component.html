@@ -1,5 +1,6 @@
+<!-- <div *ngIf -->
 <app-user-navbar></app-user-navbar>
-<div class = "page">
+<div class = "page" *ngIf="authorized">
   <div class = "side">
     <a routerLink = "/main/health">
       <fa-icon [icon]="['fas', 'house']"> </fa-icon>
@@ -29,6 +30,10 @@
   <div class="right">
     <router-outlet></router-outlet>
   </div>
+</div>
+
+<div *ngIf="!authorized">
+  <p> you don't have an access</p>
 </div>
 
 

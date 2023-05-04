@@ -15,7 +15,7 @@ class User(AbstractUser):
         MALE = "Male", _("Male")
         FEMALE = "Female", _("Female")
 
-    first_name = models.CharField(max_length=25)
+    first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email = models.CharField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
