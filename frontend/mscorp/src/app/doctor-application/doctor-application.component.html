@@ -1,1 +1,14 @@
-<p>doctor-application works!</p>
+<div class="page">
+  <div>
+    <ng-container *ngIf="applications !== null">
+      <div *ngFor = "let application of applications" class = "container">
+        <h2>{{application.message}}</h2>
+        <p> Patient: {{application.client}}</p>
+      </div>
+      <div class="buttons">
+        <button class="accept" type="submit">Accept</button>
+        <button class="reject" type="submit">Reject</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
