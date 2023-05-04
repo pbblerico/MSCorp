@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { clinics } from '../clinics';
 
 @Component({
   selector: 'app-profile',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  clinics = [...clinics];
 }
