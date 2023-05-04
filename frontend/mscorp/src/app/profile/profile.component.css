@@ -91,3 +91,37 @@
   border-radius: 5px;
   padding: 5px;
 }
+
+.doctor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  border: 1px solid #cbcaca;
+  width: 620px;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.doctor-info div{
+  margin-bottom: 10px;
+}
+
+.doctor-info div input {
+  width: 320px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #cbcaca;
+  border-radius: 5px;
+  padding: 5px;
+}
+

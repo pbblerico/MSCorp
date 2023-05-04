@@ -31,6 +31,7 @@ import { DoctorMainPageComponent } from './doctor-main-page/doctor-main-page.com
 import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.component';
 import { DoctorApplicationComponent } from './doctor-application/doctor-application.component';
 import { ClinicListComponent } from './clinic-list/clinic-list.component';
+import {ProfileComponent} from "./profile/profile.component";
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { ClinicListComponent } from './clinic-list/clinic-list.component';
     CreateAccountComponent,
     ClinicsComponent,
     DoctorsComponent,
+    ProfileComponent,
     AddClinicComponent,
     DoctorMainPageComponent,
     DoctorCalendarComponent,
