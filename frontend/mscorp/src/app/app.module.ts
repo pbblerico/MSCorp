@@ -30,6 +30,7 @@ import { AddClinicComponent } from './add-clinic/add-clinic.component';
 import { DoctorMainPageComponent } from './doctor-main-page/doctor-main-page.component';
 import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.component';
 import { DoctorApplicationComponent } from './doctor-application/doctor-application.component';
+import { ClinicListComponent } from './clinic-list/clinic-list.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { DoctorApplicationComponent } from './doctor-application/doctor-applicat
     DoctorMainPageComponent,
     DoctorCalendarComponent,
     DoctorApplicationComponent,
+    ClinicListComponent,
     // TestComponent,
   ],
   imports: [

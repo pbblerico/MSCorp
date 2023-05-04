@@ -19,6 +19,7 @@ import {AddClinicComponent} from "./add-clinic/add-clinic.component";
 import {DoctorMainPageComponent} from "./doctor-main-page/doctor-main-page.component";
 import {DoctorApplicationComponent} from "./doctor-application/doctor-application.component";
 import {DoctorCalendarComponent} from "./doctor-calendar/doctor-calendar.component";
+import {ClinicListComponent} from "./clinic-list/clinic-list.component";
 
 const routes: Routes = [
   {path: 'home', component: WelcomePageComponent},
@@ -35,6 +36,7 @@ const routes: Routes = [
       {path: 'clinics', component: ClinicsComponent},
       {path: 'doctors', component: DoctorsComponent},
       {path: 'add-clinic', component: AddClinicComponent},
+      {path: 'clinics-list', component: ClinicListComponent},
     ]},
   {path: 'personal', component: PersonalAccountComponent, children: [
       {path: 'profile', component: ProfileComponent},
