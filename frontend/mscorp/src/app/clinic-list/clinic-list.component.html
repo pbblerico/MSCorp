@@ -1,8 +1,10 @@
 <div>
   <h1> List of clinics </h1>
   <div *ngFor="let clinic of clinics" class = "list">
-    <h4> {{clinic.id}} </h4>
+    <h4> {{clinic.name}} </h4>
     <div class = "line"></div>
-    <div>{{clinic.name}}</div>
+    <div>
+      <p> promocode: </p>{{clinic.public_id}}
+    </div>
   </div>
 </div>

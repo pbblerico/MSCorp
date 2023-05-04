@@ -10,4 +10,5 @@ urlpatterns = [
     path('clinic/<int:id>/', views.ClinicDetail.as_view()),
     path('clinic/<int:id>/address/', views.getClinicAddress),
     path('clinic/<int:id>/type/', views.getClinicType),
+    path('clinic/<int:id>/doctors/', views.getClinicsDoctors),
 ]

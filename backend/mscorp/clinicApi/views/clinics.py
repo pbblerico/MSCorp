@@ -6,6 +6,8 @@ import json
 from clinicApi.views import *
 from clinicApi.models import Clinic
 from clinicApi.serializers import *
+from doctorApi.serializers import *
+from doctorApi.views import *
 
 
 class ClinicList(APIView):
@@ -69,3 +71,10 @@ class ClinicDetail(APIView):
         clinic.delete()
 
         return JsonResponse({'deleted': True})
+
+def getClinicsDoctors(request, id):
+    clinic = getClinic(id)
+    doctors = clinic.clinic.all()
+
+    doctors_json = DoctorSerializer(doctors, many=True)
+    return JsonResponse(doctors_json.data, safe=False)
