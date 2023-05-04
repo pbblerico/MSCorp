@@ -2,10 +2,16 @@
 <div class="page">
   <div class="side">
     <a routerLink="/doctor-main/calendar">
+      <fa-icon [icon] = "['fas', 'calendar']"> </fa-icon>
       <span>Calendar</span>
     </a>
     <a routerLink="/doctor-main/applications">
+      <fa-icon [icon] = "['fas', 'pen']"> </fa-icon>
       <span>Applications</span>
     </a>
+  </div>
+
+  <div>
+    <router-outlet></router-outlet>
   </div>
 </div>
