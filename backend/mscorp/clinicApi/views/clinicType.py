@@ -12,36 +12,42 @@ def ClinicTypeList(request):
         types = ClinicType.objects.all()
         return JsonResponse(ClinicTypeSerializer(types, many=True).data, safe=False)
     if request.method == 'POST':
-        serializer = VacancySerializer(data=request.data)
+        serializer = ClinicTypeSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
         return JsonResponse(serializer.data)
 
-def getVacancy(id):
+def getClinicType(id):
         try:
-            return Vacancy.objects.get(id=id)
-        except Vacancy.DoesNotExist as e:
-            return JsonResponse({'error': 'vacancy doesn\'t exist'})
+            return ClinicType.objects.get(id=id)
+        except ClinicType.DoesNotExist as e:
+            return None
 
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
-def apiVacancyDetail(request, id):
+def ClinicTypeDetail(request, id):
 
     if request.method == 'GET':
-        vacancy = getVacancy(id)
-        serializer = VacancySerializer(vacancy)
+        type = getClinicType(id)
+        if type == None:
+            return JsonResponse({'error': "such clinic type not found"})
+        serializer = ClinicTypeSerializer(type)
 
         return JsonResponse(serializer.data)
     if request.method == 'PUT':
-        vacancy = getVacancy(id)
-        serializer = VacancySerializer(vacancy, data=request.data)
+        type = getClinicType(id)
+        if type == None:
+            return JsonResponse({'error': "such clinic type not found"})
+        serializer = ClinicTypeSerializer(type, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
         return JsonResponse(serializer.data)
 
     if request.method == 'DELETE':
-        vacancy = getVacancy(id)
-        vacancy.delete()
+        type = getClinicType(id)
+        if type == None:
+            return JsonResponse({'error': "such clinic type not found"})
+        type.delete()
         return JsonResponse({'deleted': True})

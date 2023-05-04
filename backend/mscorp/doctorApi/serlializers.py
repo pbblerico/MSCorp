@@ -1,7 +1,7 @@
 from clinicApi.models import *
 from rest_framework import serializers
 
-class ClinicTypeSerializer(serializers.Serializer):
+class SpecializationSerializer(serializers.Serializer):
      id = serializers.ReadOnlyField()
      name = serializers.CharField(max_length=100)
 
@@ -15,8 +15,7 @@ class ClinicTypeSerializer(serializers.Serializer):
          instance.save()
          return instance
 
-class ClinicSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Clinic
-        fields = '__all__'
+# class DoctorSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Doctor
+#         fields = '__all__'

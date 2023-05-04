@@ -1,1 +1,2 @@
-from .address import *
+from .clinicType import *
+from .clinics import *

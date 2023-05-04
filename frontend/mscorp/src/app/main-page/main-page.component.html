@@ -1,39 +1,42 @@
-<!-- <div *ngIf -->
-<app-user-navbar></app-user-navbar>
-<div class = "page" *ngIf="authorized">
-  <div class = "side">
-    <a routerLink = "/main/health">
-      <fa-icon [icon]="['fas', 'house']"> </fa-icon>
-      <span>Health</span>
-    </a>
-    <a routerLink = "/main/actions">
-      <fa-icon [icon]="['fas', 'book-medical']"> </fa-icon>
-      <span>Actions</span>
-    </a>
-    <a routerLink = "/main/history">
-      <fa-icon [icon]="['fas', 'history']"> </fa-icon>
-      <span>History</span>
-    </a>
-    <a routerLink = "/main/events">
-      <fa-icon [icon]="['fas', 'calendar']"> </fa-icon>
-      <span>Events</span>
-    </a>
-    <a routerLink="/main/doctors">
-      <fa-icon [icon]="['fas', 'user-doctor']"> </fa-icon>
-      <span>Doctors</span>
-    </a>
-    <a routerLink="/main/clinics">
-      <fa-icon [icon]="['fas', 'hospital']"> </fa-icon>
-      <span>Clinics</span>
-    </a>
+<div class="authorized" *ngIf="service.isLoggedIn">
+
+  <app-user-navbar></app-user-navbar>
+  <div class = "page">
+    <div class = "side">
+      <a routerLink = "/main/health">
+        <fa-icon [icon]="['fas', 'house']"> </fa-icon>
+        <span>Health</span>
+      </a>
+      <a routerLink = "/main/actions">
+        <fa-icon [icon]="['fas', 'book-medical']"> </fa-icon>
+        <span>Actions</span>
+      </a>
+      <a routerLink = "/main/history">
+        <fa-icon [icon]="['fas', 'history']"> </fa-icon>
+        <span>History</span>
+      </a>
+      <a routerLink = "/main/events">
+        <fa-icon [icon]="['fas', 'calendar']"> </fa-icon>
+        <span>Events</span>
+      </a>
+      <a routerLink="/main/doctors">
+        <fa-icon [icon]="['fas', 'user-doctor']"> </fa-icon>
+        <span>Doctors</span>
+      </a>
+      <a routerLink="/main/clinics">
+        <fa-icon [icon]="['fas', 'hospital']"> </fa-icon>
+        <span>Clinics</span>
+      </a>
+    </div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <div class="right">
-    <router-outlet></router-outlet>
-  </div>
+
 </div>
 
-<div *ngIf="!authorized">
+<!-- <div class="unauthorized" *ngIf="!authorized">
   <p> you don't have an access</p>
 </div>
-
+ -->
 
