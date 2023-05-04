@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from django.http import JsonResponse
-from .serializers import UserSerializer
-from .models import User
+from api.serializers import UserSerializer
+from api.models import User
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
 import datetime, jwt
@@ -70,19 +70,19 @@ class UserView(APIView):
 
         if not token:
             return JsonResponse({"error": "No user found"})
-        
+
         try:
             payload = jwt.decode(token, 'secret', algoritm=['HS256'])
-            
+
         except jwt.ExpiredSignatureError:
             return JsonResponse({"error": "No user found"})
         id = payload['id']
         user = User.objects.get(id=id)
 
         response = JsonResponse({'id': user.id, 'role': user.role})
-        
+
         return response
-    
+
 class LogOutView(APIView):
     def post(self, request):
         response = JsonResponse()

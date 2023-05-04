@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_jwt',
 
+    'clinicApi.apps.ClinicapiConfig',
+    'doctorApi.apps.DoctorapiConfig',
+    'userApi.apps.UserapiConfig',
     'api.apps.ApiConfig',
 ]
 
